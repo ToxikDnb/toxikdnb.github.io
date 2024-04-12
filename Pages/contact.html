@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mackenzie Blackaby - Home</title>
+        <link rel="stylesheet" type="text/css" href=../Styles/style.css />
+        <link
+            rel="icon"
+            href="../Resources/Images/Icons/people.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <div class="Panel Core ShadowBuffer">
+            <div class="Title ShadowText Capitalise">
+                <img
+                    class="ShadowImage"
+                    id="pfp"
+                    src="Resources/Images/Placeholder.jpg"
+                    alt="Profile Picture"
+                />
+                <div class="TitleText">
+                    <h1 id="name">Mackenzie Blackaby</h1>
+                    <h4 id="title">Computer Science Student</h4>
+                </div>
+            </div>
+        </div>
+        <div class="TopSticky">
+            <div class="Panel Accent AccentPanel ShadowBuffer">
+                <div
+                    class="TitleNav ShadowText Capitalise"
+                    id="navbarContainer"
+                ></div>
+            </div>
+        </div>
+        <div class="Main">
+            <form>
+                <div class="Panel Core ShadowBuffer AccentPanel">
+                    <h2>Contact Me:</h2>
+                    <h3>
+                        If you would like to contact me, please fill out the
+                        form below and I will get back to you as soon as
+                        possible.
+                    </h3>
+                    <div class="Input ShadowBuffer">
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name.."
+                        />
+                    </div>
+                    <div class="Input ShadowBuffer">
+                        <label for="email">Email:</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Your email.."
+                        />
+                    </div>
+                    <div class="Input ShadowBuffer">
+                        <label for="subject">Subject:</label>
+                        <textarea
+                            id="subject"
+                            name="subject"
+                            placeholder="Write something.."
+                        ></textarea>
+                    </div>
+                    <input
+                        class="SubmitButton ShadowBuffer"
+                        type="submit"
+                        value="Submit"
+                    />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+<script src="/Scripts/personalInforationUpdater.js"></script>
+<script src="/Scripts/addFooter.js"></script>
