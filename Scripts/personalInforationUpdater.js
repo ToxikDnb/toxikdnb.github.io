@@ -14,7 +14,8 @@ fetch("/Scripts/Data/personalInfo.json")
         let pageName = window.location.pathname.split("/").pop();
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
-            if (element.link.split("/").pop() == pageName || (pageName == window.location.hostname && element.link == "")) {
+            console.log(pageName, element.link);
+            if (false) {
                 navElement.classList.add("ActivatedLink");
             }
             navElement.href = "https://" + window.location.hostname + "/" + element.link;
