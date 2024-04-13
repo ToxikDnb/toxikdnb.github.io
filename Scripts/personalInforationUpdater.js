@@ -18,6 +18,7 @@ fetch("../Scripts/Data/personalInfo.json")
                 navElement.classList.add("ActivatedLink");
             }
             navElement.href = "https://" + window.location.hostname + "/" + element.link;
+            navElement.innerHTML = element.name;
             navbarContainer.appendChild(navElement);
         });
     });
