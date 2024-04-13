@@ -15,10 +15,9 @@ fetch("../Scripts/Data/personalInfo.json")
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
             // If link not homepage, add "/Pages/"
-            if (pageName == "index.html") {
+            if (pageName == "index.html" || pageName == "") {
                 element.link = "Pages/" + element.link;
-            }
-            else if (element.link == "index.html") {
+            } else if (element.link == "index.html" || element.link == "") {
                 element.link = "../" + element.link;
             }
             if (element.link.includes(pageName)) {
