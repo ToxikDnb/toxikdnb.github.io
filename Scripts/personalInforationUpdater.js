@@ -14,22 +14,7 @@ fetch("../Scripts/Data/personalInfo.json")
         let pageName = window.location.pathname.split("/").pop();
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
-            if(element.link == "index.html") element.link = "/";
-            // If link not homepage, add "/Pages/"
-            if (pageName == "index.html" || pageName == "") {
-                element.link = "Pages/" + element.link;
-            } else if (element.link == "/") {
-                element.link = "../" + element.link;
-            }
-            if (element.link.includes(pageName)) {
-                let div = document.createElement("div");
-                div.classList.add("ActivatedLink");
-                div.innerHTML = element.name;
-                navElement.appendChild(div);
-            } else {
-                navElement.innerHTML = element.name;
-            }
-            navElement.href = element.link;
+            navElement.href = window.location.hostname + element.link;
             navbarContainer.appendChild(navElement);
         });
     });
