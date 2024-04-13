@@ -16,7 +16,7 @@ fetch("../Scripts/Data/personalInfo.json")
             let navElement = document.createElement("a");
             if(element.link == "index.html") element.link = "/";
             // If link not homepage, add "/Pages/"
-            if (pageName == "index.html" || pageName == "/") {
+            if (pageName == "index.html" || pageName == "") {
                 element.link = "Pages/" + element.link;
             } else if (element.link == "/") {
                 element.link = "../" + element.link;
