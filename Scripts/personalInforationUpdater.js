@@ -4,7 +4,7 @@ let pfp = document.getElementById("pfp");
 
 let navbarContainer = document.getElementById("navbarContainer");
 
-fetch("../Scripts/Data/personalInfo.json")
+fetch("/Scripts/Data/personalInfo.json")
     .then((response) => response.json())
     .then((personalInformation) => {
         fullname.innerHTML = personalInformation.name;
