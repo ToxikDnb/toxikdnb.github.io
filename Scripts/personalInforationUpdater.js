@@ -11,13 +11,13 @@ fetch("../Scripts/Data/personalInfo.json")
         title.innerHTML = personalInformation.title;
         pfp.src = personalInformation.profilePicture;
         navbarElements = personalInformation["pages"];
-        let pageName = window.location.pathname.split("/")[-1];
+        let pageName = window.location.pathname.split("/").pop();
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
-            if (element.link.split("/")[-1] == pageName) {
+            if (element.link.split("/").pop() == pageName || (pageName == window.location.hostname && element.link == "")) {
                 navElement.classList.add("ActivatedLink");
             }
-            navElement.href = window.location.hostname + element.link;
+            navElement.href = "https://" + window.location.hostname + "/" + element.link;
             navbarContainer.appendChild(navElement);
         });
     });
