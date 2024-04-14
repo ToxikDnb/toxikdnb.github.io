@@ -11,28 +11,24 @@ fetch("/Scripts/Data/personalInfo.json")
         title.innerHTML = personalInformation.title;
         pfp.src =
             "https://" +
-            window.Location.hostname +
+            window.location.hostname +
             "/" +
             personalInformation.profilePicture;
         navbarElements = personalInformation["pages"];
         let pageName = window.location.pathname.split("/").pop();
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
-            console.log(pageName, element.link);
-            console.log(element.link.split("/").pop());
             navElement.href =
                 "https://" + window.location.hostname + "/" + element.link;
+            navElement.innerHTML = element.name;
             if (
                 (element.link == "" && pageName == element.link) ||
                 pageName == element.link.split("/").pop()
             ) {
                 let tempElement = document.createElement("div");
                 tempElement.classList.add("ActivatedLink");
-                tempElement.innerHTML = element.name;
                 tempElement.appendChild(navElement);
                 navElement = tempElement;
-            } else {
-                navElement.innerHTML = element.name;
             }
             navbarContainer.appendChild(navElement);
         });
