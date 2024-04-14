@@ -15,6 +15,7 @@ fetch("/Scripts/Data/personalInfo.json")
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
             console.log(pageName, element.link);
+            console.log(element.link.splot("/").pop());
             if ((element.link == "" && pageName == element.link) || pageName == element.link.split("/").pop()) {
                 navElement.classList.add("ActivatedLink");
             }
