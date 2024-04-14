@@ -17,7 +17,6 @@ fetch("../Scripts/Data/qualifications.json")
         for (property in qualificationsFile) {
             data = qualificationsFile[property];
             data.forEach((element) => {
-                console.log(element);
                 let key = Object.keys(element)[0];
                 addQualification(property, {
                     subject: key,

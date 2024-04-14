@@ -21,7 +21,6 @@ fetch("/Scripts/Data/personalInfo.json")
             navElement.href =
                 "https://" + window.location.hostname + "/" + element.link;
             navElement.innerHTML = element.name;
-            console.log(pageName);
             if (
                 (element.link == "" && pageName == "") ||
                 pageName == element.link.split("/").pop()
