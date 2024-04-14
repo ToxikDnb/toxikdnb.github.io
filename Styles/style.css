@@ -75,7 +75,7 @@ table {
     font-family: var(--accentFont);
 }
 
-footer{
+footer {
     background: linear-gradient(-45deg, black, var(--text));
     padding: 20px;
     text-align: center;
@@ -83,7 +83,6 @@ footer{
     font-size: 1.2rem;
     font-weight: 700;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-
 }
 
 .Core {
@@ -159,6 +158,10 @@ footer{
     z-index: 10000;
 }
 
+.ActivatedLink {
+    color: var(--text-light);
+}
+
 .TitleNav {
     padding-left: 20px;
     padding-right: 20px;
@@ -176,10 +179,6 @@ footer{
 }
 
 .TitleNav a:hover {
-    color: var(--text-light);
-}
-
-.ActivatedLink {
     color: var(--text-light);
 }
 
