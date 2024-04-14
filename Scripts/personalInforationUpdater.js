@@ -20,15 +20,20 @@ fetch("/Scripts/Data/personalInfo.json")
             let navElement = document.createElement("a");
             console.log(pageName, element.link);
             console.log(element.link.split("/").pop());
+            navElement.href =
+                "https://" + window.location.hostname + "/" + element.link;
             if (
                 (element.link == "" && pageName == element.link) ||
                 pageName == element.link.split("/").pop()
             ) {
-                navElement.classList.add("ActivatedLink");
+                let tempElement = document.createElement("div");
+                tempElement.classList.add("ActivatedLink");
+                tempElement.innerHTML = element.name;
+                tempElement.appendChild(navElement);
+                navElement = tempElement;
+            } else {
+                navElement.innerHTML = element.name;
             }
-            navElement.href =
-                "https://" + window.location.hostname + "/" + element.link;
-            navElement.innerHTML = element.name;
             navbarContainer.appendChild(navElement);
         });
     });
