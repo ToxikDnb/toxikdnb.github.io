@@ -158,10 +158,6 @@ footer {
     z-index: 10000;
 }
 
-.ActivatedLink {
-    color: var(--text-light);
-}
-
 .TitleNav {
     padding-left: 20px;
     padding-right: 20px;
@@ -179,6 +175,10 @@ footer {
 }
 
 .TitleNav a:hover {
+    color: var(--text-light);
+}
+
+a.ActivatedLink {
     color: var(--text-light);
 }
 

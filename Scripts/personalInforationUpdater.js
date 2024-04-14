@@ -16,23 +16,18 @@ fetch("/Scripts/Data/personalInfo.json")
             personalInformation.profilePicture;
         navbarElements = personalInformation["pages"];
         let pageName = window.location.pathname.split("/").pop();
-        console.log(
-            "https://" +
-                window.location.hostname +
-                "/" +
-                personalInformation.profilePicture
-        );
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
             navElement.href =
                 "https://" + window.location.hostname + "/" + element.link;
             navElement.innerHTML = element.name;
+            console.log(pageName);
             if (
-                (element.link == "" && pageName == element.link) ||
+                (element.link == "" && pageName == "") ||
                 pageName == element.link.split("/").pop()
             ) {
                 let tempElement = document.createElement("div");
-                tempElement.classList.add("ActivatedLink");
+                navElement.classList.add("ActivatedLink");
                 tempElement.appendChild(navElement);
                 navElement = tempElement;
             }
