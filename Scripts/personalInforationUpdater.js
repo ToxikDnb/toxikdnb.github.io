@@ -18,9 +18,10 @@ fetch("/Scripts/Data/personalInfo.json")
         let pageName = window.location.pathname.split("/").pop();
         console.log(
             "https://" +
-            window.location.hostname +
-            "/" +
-            personalInformation.profilePicture);
+                window.location.hostname +
+                "/" +
+                personalInformation.profilePicture
+        );
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
             navElement.href =
