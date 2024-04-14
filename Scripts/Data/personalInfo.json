@@ -1,7 +1,7 @@
 {
     "name": "Mackenzie Blackaby",
     "title": "Computer Science Student at Lancaster University",
-    "profilePicture": "/Resources/Images/Placeholder.jpg",
+    "profilePicture": "Resources/Images/Placeholder.jpg",
     "pages": [
         { "name": "Home", "link": "" },
         { "name": "Projects", "link": "Pages/projects.html" },
