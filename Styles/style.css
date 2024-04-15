@@ -311,11 +311,17 @@ a.ActivatedLink {
     border-radius: 5px;
 }
 
+
+
 .Inset{
     box-shadow: inset 2px 2px 5px -2px var(--dark);
     border: 2px solid var(--dark);
     border-right: 2px solid var(--light);
     border-bottom: 2px solid var(--light);
+}
+
+img.Inset {
+    filter: brightness(1.1) drop-shadow(2px 2px 3px #000);
 }
 
 @media (max-width: 600px) {
