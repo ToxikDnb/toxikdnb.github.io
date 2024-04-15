@@ -315,6 +315,7 @@ a.ActivatedLink {
         background-image: none;
         background-color: var(--bg);
         overflow-x: hidden;
+        font-size: 2vw;
     }
 
     @media (max-width: 600px) {
