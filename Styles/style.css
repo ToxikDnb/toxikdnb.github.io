@@ -23,18 +23,6 @@ body {
     padding: 0;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 0.8vw;
-        padding: 5%;
-    }
-
-    .Grid {
-        grid-template-columns: 1fr;
-        display: block;
-    }
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -314,4 +302,28 @@ a.ActivatedLink {
     padding: 5px;
     border: 1px solid var(--text);
     border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.8vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    @media (max-width: 600px) {
+        .Grid {
+            display: block;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .GridItem {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .GridItem img {
+            width: 100%;
+        }
+    }
 }
