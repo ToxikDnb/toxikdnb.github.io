@@ -323,8 +323,15 @@ a.ActivatedLink {
         font-size: 3vw;
     }
 
+    .TitleNav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .TitleNav a {
-        font-size: 2vw;
+        font-size: 3vw;
+        width: auto;
+        word-wrap: break-word;
     }
 
     @media (max-width: 600px) {
