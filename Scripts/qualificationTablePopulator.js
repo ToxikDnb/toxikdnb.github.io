@@ -11,18 +11,20 @@ function addQualification(gradeType, qualification) {
     grade.innerHTML = qualification.grade;
 }
 
-fetch("../Scripts/Data/qualifications.json")
-    .then((response) => response.json())
-    .then((qualificationsFile) => {
-        for (property in qualificationsFile) {
-            data = qualificationsFile[property];
-            data.forEach((element) => {
-                let key = Object.keys(element)[0];
-                addQualification(property, {
-                    subject: key,
-                    grade: element[key],
+window.addEventListener("load", function () {
+    fetch("../Scripts/Data/qualifications.json")
+        .then((response) => response.json())
+        .then((qualificationsFile) => {
+            for (property in qualificationsFile) {
+                data = qualificationsFile[property];
+                data.forEach((element) => {
+                    let key = Object.keys(element)[0];
+                    addQualification(property, {
+                        subject: key,
+                        grade: element[key],
+                    });
                 });
-            });
-        }
-    })
-    .catch((error) => console.error("An error occurred:", error));
+            }
+        })
+        .catch((error) => console.error("An error occurred:", error));
+});
