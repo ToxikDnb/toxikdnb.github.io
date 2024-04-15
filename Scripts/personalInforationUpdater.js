@@ -11,14 +11,13 @@ fetch("/Scripts/Data/personalInfo.json"
         pfp.src =
             "https://" +
             window.location.hostname +
-            "/" +
             personalInformation.profilePicture;
         navbarElements = personalInformation["pages"];
         let pageName = window.location.pathname.split("/").pop();
         navbarElements.forEach((element) => {
             let navElement = document.createElement("a");
             navElement.href =
-                "https://" + window.location.hostname + "/" + element.link;
+                "https://" + window.location.hostname + element.link;
             navElement.innerHTML = element.name;
             if (
                 (element.link == "" && pageName == "") ||
