@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     let fullname = document.getElementById("name");
     let title = document.getElementById("title");
     let pfp = document.getElementById("pfp");
