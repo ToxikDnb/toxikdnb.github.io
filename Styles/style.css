@@ -63,6 +63,7 @@ p {
     margin: 1vw;
     font-size: 1.2vw;
     color: var(--text);
+    text-align: justify;
 }
 
 footer {
