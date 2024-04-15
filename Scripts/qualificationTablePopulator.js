@@ -10,7 +10,7 @@ function addQualification(gradeType, qualification) {
 }
 
 let table = document.getElementById("qualificationsTable");
-fetch("https://www." + window.location.hostname + "/Scripts/Data/qualifications.json")
+fetch("/Scripts/Data/qualifications.json")
     .then((response) => response.json())
     .then((qualificationsFile) => {
         for (property in qualificationsFile) {
