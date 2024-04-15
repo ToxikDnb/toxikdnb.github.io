@@ -7,7 +7,8 @@
     --accent: #a99576;
     --accentDark: #856b45;
     --text: #222;
-    --text-light: #fffffa;
+    --text-light: #ffffff;
+    --text-footer: #939393;
     --mainFont: "Arial", sans-serif;
     --accentFont: "Times New Roman", serif;
 }
@@ -58,9 +59,21 @@ h4 {
 }
 
 p {
-    font-size: 1vw;
     line-height: 1.5;
     margin: 1vw;
+    font-size: 1.2vw;
+    color: var(--text);
+}
+
+footer {
+    background: linear-gradient(-45deg, black, var(--text));
+    padding: 20px;
+    text-align: center;
+    color: var(--text-footer);
+    font-size: 1vw;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
 }
 
 ul {
@@ -81,17 +94,6 @@ table {
     border-top: 1px solid var(--text-light);
     border-left: 1px solid var(--text-light);
     font-family: var(--accentFont);
-}
-
-footer {
-    background: linear-gradient(-45deg, black, var(--text));
-    padding: 20px;
-    text-align: center;
-    color: var(--text-light);
-    font-size: 1.2vw;
-    font-weight: 700;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    margin-top: auto;
 }
 
 .Core {
@@ -181,6 +183,7 @@ footer {
     text-align: center;
     font-size: 1.5vw;
     font-weight: 700;
+    padding: 5px;
 }
 
 .TitleNav a:hover {
@@ -250,12 +253,6 @@ a.ActivatedLink {
     padding: 20px;
 }
 
-.Introduction p {
-    font-size: 1.2vw;
-    color: var(--text);
-    margin: 1vw 0;
-}
-
 .Input {
     padding: 10px;
     margin: 10px;
@@ -315,7 +312,18 @@ a.ActivatedLink {
         background-image: none;
         background-color: var(--bg);
         overflow-x: hidden;
-        font-size: 2vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
+
+    .TitleNav a {
+        font-size: 2ch;
     }
 
     @media (max-width: 600px) {
