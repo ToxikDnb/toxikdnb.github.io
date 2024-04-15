@@ -324,7 +324,7 @@ a.ActivatedLink {
     }
 
     .TitleNav a {
-        font-size: 2ch;
+        font-size: 2vw;
     }
 
     @media (max-width: 600px) {
