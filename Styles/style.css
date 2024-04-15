@@ -306,8 +306,10 @@ a.ActivatedLink {
 
 @media (max-width: 600px) {
     body {
-        font-size: 0.8vw;
         margin: 0;
+        padding: 0;
+        background-image: none;
+        background-color: var(--bg);
         overflow-x: hidden;
     }
 
