@@ -316,6 +316,7 @@ a.ActivatedLink {
     border: 2px solid var(--dark);
     border-right: 2px solid var(--light);
     border-bottom: 2px solid var(--light);
+    filter: brightness(60%);
 }
 
 img.Inset {
