@@ -1,5 +1,3 @@
-let table = document.getElementById("qualificationsTable");
-
 function addQualification(gradeType, qualification) {
     let row = table.insertRow(-1);
     let type = row.insertCell(0);
@@ -12,6 +10,7 @@ function addQualification(gradeType, qualification) {
 }
 
 window.addEventListener("load", function () {
+    let table = document.getElementById("qualificationsTable");
     fetch("../Scripts/Data/qualifications.json")
         .then((response) => response.json())
         .then((qualificationsFile) => {

@@ -1,10 +1,8 @@
-let fullname = document.getElementById("name");
-let title = document.getElementById("title");
-let pfp = document.getElementById("pfp");
-
-let navbarContainer = document.getElementById("navbarContainer");
-
 window.addEventListener("load", function () {
+    let fullname = document.getElementById("name");
+    let title = document.getElementById("title");
+    let pfp = document.getElementById("pfp");
+    let navbarContainer = document.getElementById("navbarContainer");
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => response.json())
         .then((personalInformation) => {
