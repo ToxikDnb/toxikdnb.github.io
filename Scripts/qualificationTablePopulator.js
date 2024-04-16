@@ -9,7 +9,7 @@ function addQualification(gradeType, qualification) {
     grade.innerHTML = qualification.grade;
 }
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     let table = document.getElementById("qualificationsTable");
     fetch("/Scripts/Data/qualifications.json")
         .then((response) => response.json())

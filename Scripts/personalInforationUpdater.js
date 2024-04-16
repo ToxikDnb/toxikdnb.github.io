@@ -3,7 +3,7 @@ let title = document.getElementById("title");
 let pfp = document.getElementById("pfp");
 let navbarContainer = document.getElementById("navbarContainer");
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => {
             console.log(response.status);
