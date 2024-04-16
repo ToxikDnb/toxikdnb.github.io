@@ -32,8 +32,4 @@ function updateQualifications() {
         .catch((error) => console.error("An error occurred:", error));
 }
 
-if (document.readyState !== "loading") {
-    updateQualifications();
-} else {
-    document.addEventListener("DOMContentLoaded", updateQualifications());
-}
+updateQualifications();

@@ -37,8 +37,4 @@ function updatePersonalInformation() {
         });
 }
 
-if (document.readyState !== "loading") {
-    updatePersonalInformation();
-} else {
-    document.addEventListener("DOMContentLoaded", updatePersonalInformation());
-}
+updatePersonalInformation();
