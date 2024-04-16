@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     )
         .then((response) => response.json())
         .then((personalInformation) => {
+            console.log("This is what");
             fullname.innerHTML = personalInformation.name;
             title.innerHTML = personalInformation.title;
             pfp.src =
