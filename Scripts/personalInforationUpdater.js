@@ -3,7 +3,7 @@ let title = document.getElementById("title");
 let pfp = document.getElementById("pfp");
 let navbarContainer = document.getElementById("navbarContainer");
 
-document.addEventListener("DOMContentLoaded", function () {
+function updatePersonalInformation() {
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => {
             console.log(response.status);
@@ -35,4 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 navbarContainer.appendChild(navElement);
             });
         });
-});
+}
+
+if (document.readyState !== "loading") {
+    console.log("document is already ready, just execute code here");
+    updatePersonalInformation();
+} else {
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("document was not ready, place code here");
+        updatePersonalInformation();
+    });
+}
