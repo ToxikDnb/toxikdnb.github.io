@@ -31,6 +31,7 @@ function updatePersonalInformation() {
                 document
                     .getElementById("navbarContainer")
                     .appendChild(navElement);
+                document.getElementById("menu").appendChild(navElement);
             });
         });
 }

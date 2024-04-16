@@ -280,7 +280,7 @@ a.ActivatedLink {
 }
 
 .SubmitButton {
-    background-color: var(--accent);
+    background-color: linear-gradient(-45deg, var(--accentDark), var(--accent));
     color: var(--dark);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     border-top: 2px double var(--light);
@@ -358,6 +358,49 @@ img.Inset {
     margin: 10px;
 }
 
+.MenuButton {
+    display: none;
+}
+
+.Menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, var(--accentDark), var(--accent));
+    z-index: 1000;
+    padding-left: 20px;
+    grid-template-columns: 1fr;
+    text-align: left;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Menu a {
+    font-size: 9vw;
+    color: var(--dark);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.Menu a:hover {
+    color: var(--text-dark);
+    text-decoration: solid 2px underline;
+}
+
+.Menu a.ActivatedLink {
+    color: var(--text-dark);
+    text-decoration: solid 2px underline;
+}
+
+.Menu.show {
+    transform: translateX(0);
+}
+
 @media (max-width: 600px) {
     body {
         margin: 0;
@@ -395,6 +438,33 @@ img.Inset {
         font-size: 8vw;
     }
 
+    .Menu{
+        display: grid;
+    }
+
+    .MenuButton {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        margin: 10px;
+        background: linear-gradient(-45deg, var(--accentDark), var(--accent));
+        color: var(--dark);
+        border-radius: 50%;
+        font-size: 2vw;
+        z-index: 10000;
+    }
+
+    .MenuButtonLine {
+        display: block;
+        width: 25px;
+        height: 5px;
+        background-color: var(--dark);
+        margin: 5px;
+        border-radius: 10px;
+    }
+
     .ProjectGrid {
         display: grid;
         grid-template-columns: 1fr;
@@ -408,38 +478,31 @@ img.Inset {
         object-fit: cover;
     }
 
-    .TitleNav {
-        padding-left: 10px;
-        padding-right: 10px;
+    .NavBar {
+        display: none;
     }
 
-    .TitleNav a {
-        font-size: 4vw;
+    .Grid {
+        display: block;
+        grid-template-columns: 1fr;
+        padding: 0px;
     }
-
-    @media (max-width: 600px) {
-        .Grid {
-            display: block;
-            grid-template-columns: 1fr;
-            padding: 0px;
-        }
-        .GridItem {
-            box-shadow: 2px 2px 5px -1px var(--dark);
-            border-radius: 0;
-            border: 2px solid var(--light);
-            border-right: 2px solid var(--dark);
-            border-bottom: 2px solid var(--dark);
-            overflow: hidden;
-            margin: 10px;
-        }
-        .GridItemLeft {
-            box-shadow: inset 5px 5px 10px -2px var(--dark);
-            border: 2px solid var(--dark);
-            border-right: 2px solid var(--light);
-            border-bottom: 2px solid var(--light);
-        }
-        .GridItem img {
-            width: 50%;
-        }
+    .GridItem {
+        box-shadow: 2px 2px 5px -1px var(--dark);
+        border-radius: 0;
+        border: 2px solid var(--light);
+        border-right: 2px solid var(--dark);
+        border-bottom: 2px solid var(--dark);
+        overflow: hidden;
+        margin: 10px;
+    }
+    .GridItemLeft {
+        box-shadow: inset 5px 5px 10px -2px var(--dark);
+        border: 2px solid var(--dark);
+        border-right: 2px solid var(--light);
+        border-bottom: 2px solid var(--light);
+    }
+    .GridItem img {
+        width: 50%;
     }
 }
