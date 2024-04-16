@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--bg);
-    background-image: url("/../Resources/Images/Background.jpg");
+    background-image: url("/Resources/Images/Background.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: var(--text);
