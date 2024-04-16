@@ -2,6 +2,7 @@
     "projects": [
         {
             "name": "Less Powerful Point",
+            "subtitle": "LU Coursework",
             "description": "Powerpoint remake designed for programmers",
             "image": "/Resources/Images/Placeholder.jpg",
             "link": "blackaby.uk"

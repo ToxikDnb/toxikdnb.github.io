@@ -323,16 +323,39 @@ img.Inset {
     filter: brightness(80%) drop-shadow(2px 2px 3px #000);
 }
 
-.ProjectGrid{
+.ProjectGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     gap: 20px;
 }
 
-.ProjectGrid a{
+.ProjectGrid a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-decoration: none;
     color: inherit;
+}
+
+.ProjectGrid a h2 {
+    text-align: left;
+    font-size: 2vw;
+}
+
+.ProjectGrid a h3 {
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.ProjectGrid a p {
+    text-align: left;
+}
+
+.ProjectGrid img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 10px;
 }
 
 @media (max-width: 600px) {
@@ -372,12 +395,12 @@ img.Inset {
         font-size: 8vw;
     }
 
-    .ProjectGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 20px;
-}
+    .ProjectGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
 
     .Title img {
         width: 100px;
