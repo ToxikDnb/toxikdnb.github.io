@@ -1,4 +1,4 @@
-function addQualification(gradeType, qualification) {
+function addQualification(gradeType, qualification, table) {
     let row = table.insertRow(-1);
     let type = row.insertCell(0);
     let subject = row.insertCell(1);
@@ -18,10 +18,14 @@ function updateQualifications() {
                 data = qualificationsFile[property];
                 data.forEach((element) => {
                     let key = Object.keys(element)[0];
-                    addQualification(property, {
-                        subject: key,
-                        grade: element[key],
-                    });
+                    addQualification(
+                        property,
+                        {
+                            subject: key,
+                            grade: element[key],
+                        },
+                        table
+                    );
                 });
             }
         })
@@ -29,11 +33,7 @@ function updateQualifications() {
 }
 
 if (document.readyState !== "loading") {
-    console.log("document is already ready, just execute code here");
     updateQualifications();
 } else {
-    document.addEventListener("DOMContentLoaded", function () {
-        console.log("document was not ready, place code here");
-        updateQualifications();
-    });
+    document.addEventListener("DOMContentLoaded", updateQualifications());
 }
