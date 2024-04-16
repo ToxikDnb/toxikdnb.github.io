@@ -10,7 +10,6 @@ function addQualification(gradeType, qualification, table) {
 }
 
 function updateQualifications() {
-    let table = document.getElementById("qualificationsTable");
     fetch("/Scripts/Data/qualifications.json")
         .then((response) => response.json())
         .then((qualificationsFile) => {
@@ -18,13 +17,14 @@ function updateQualifications() {
                 data = qualificationsFile[property];
                 data.forEach((element) => {
                     let key = Object.keys(element)[0];
+                    console.log("Test");
                     addQualification(
                         property,
                         {
                             subject: key,
                             grade: element[key],
                         },
-                        table
+                        document.getElementById("qualificationsTable")
                     );
                 });
             }

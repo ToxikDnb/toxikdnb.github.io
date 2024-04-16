@@ -1,17 +1,14 @@
-let fullName = document.getElementById("name");
-let title = document.getElementById("title");
-let pfp = document.getElementById("pfp");
-let navbarContainer = document.getElementById("navbarContainer");
-
 function updatePersonalInformation() {
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => {
             return response.json();
         })
         .then((personalInformation) => {
-            fullName.innerHTML = personalInformation.name;
-            title.innerHTML = personalInformation.title;
-            pfp.src =
+            document.getElementById("name").innerHTML =
+                personalInformation.name;
+            document.getElementById("title").innerHTML =
+                personalInformation.title;
+            document.getElementById("pfp").src =
                 "https://" +
                 window.location.hostname +
                 personalInformation.profilePicture;
@@ -31,7 +28,9 @@ function updatePersonalInformation() {
                     tempElement.appendChild(navElement);
                     navElement = tempElement;
                 }
-                navbarContainer.appendChild(navElement);
+                document
+                    .getElementById("navbarContainer")
+                    .appendChild(navElement);
             });
         });
 }
