@@ -316,12 +316,11 @@ a.ActivatedLink {
     border: 2px solid var(--dark);
     border-right: 2px solid var(--light);
     border-bottom: 2px solid var(--light);
-    filter: brightness(60%);
 }
 
 img.Inset {
     padding: 5px;
-    filter: brightness(1.1) drop-shadow(2px 2px 3px #000);
+    filter: brightness(80%) drop-shadow(2px 2px 3px #000);
 }
 
 @media (max-width: 600px) {
