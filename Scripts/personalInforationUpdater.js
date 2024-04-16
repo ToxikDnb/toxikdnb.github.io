@@ -6,7 +6,6 @@ let navbarContainer = document.getElementById("navbarContainer");
 function updatePersonalInformation() {
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => {
-            console.log(response.status);
             return response.json();
         })
         .then((personalInformation) => {
