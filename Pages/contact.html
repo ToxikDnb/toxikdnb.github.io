@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="Main">
-            <form>
+            <form action="mailto:mackenzie@blackaby.uk" method="get" enctype="text/plain">
                 <div class="Panel Core ShadowBuffer AccentPanel">
                     <h2>Contact Me:</h2>
                     <h3>
@@ -44,7 +44,7 @@
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Your name.."
+                            placeholder="Your name..."
                         />
                     </div>
                     <div class="Input ShadowBuffer">
@@ -53,21 +53,30 @@
                             type="text"
                             id="email"
                             name="email"
-                            placeholder="Your email.."
+                            placeholder="Your email..."
                         />
                     </div>
                     <div class="Input ShadowBuffer">
-                        <label for="subject">Subject:</label>
+                        <label for="email">Subject:</label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Subject..."
+                        />
+                    </div>
+                    <div class="Input ShadowBuffer">
+                        <label for="subject">Message:</label>
                         <textarea
                             id="subject"
                             name="subject"
-                            placeholder="Write something.."
+                            placeholder="Write something..."
                         ></textarea>
                     </div>
                     <input
                         class="SubmitButton ShadowBuffer"
                         type="submit"
-                        value="Submit"
+                        value="Send"
                     />
                 </div>
             </form>
