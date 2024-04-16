@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("navbarContainer: " + navbarContainer);
 
     fetch("/Scripts/Data/personalInfo.json")
-        .then((response) => response.json())
+        .then((response) => {
+            console.log(response.status);
+            response.json();
+        })
         .then((personalInformation) => {
             fullname.innerHTML = personalInformation.name;
             title.innerHTML = personalInformation.title;
