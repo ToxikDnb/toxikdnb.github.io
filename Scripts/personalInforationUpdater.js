@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let fullname = document.getElementById("name");
+    let fullName = document.getElementById("name");
     let title = document.getElementById("title");
     let pfp = document.getElementById("pfp");
     let navbarContainer = document.getElementById("navbarContainer");
 
-    console.log("fullname: " + fullname);
+    console.log("fullname: " + fullName);
     console.log("title: " + title);
     console.log("pfp: " + pfp);
     console.log("navbarContainer: " + navbarContainer);
@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/Scripts/Data/personalInfo.json")
         .then((response) => {
             console.log(response.status);
-            response.json();
+            return response.json();
         })
         .then((personalInformation) => {
-            fullname.innerHTML = personalInformation.name;
+            fullName.innerHTML = personalInformation.name;
             title.innerHTML = personalInformation.title;
             pfp.src =
                 "https://" +
