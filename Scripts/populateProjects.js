@@ -1,20 +1,17 @@
-function getProjectTemplate() {
-    return fetch("/Scripts/Elements/project.html")
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
-            return response.text();
-        })
-        .then((data) => {
-            return data;
-        })
-        .catch((error) => {
-            console.error(
-                "There has been a problem with the fetch operation: ",
-                error
-            );
-        });
+async function getProjectTemplate() {
+    try {
+        const response = await fetch("/Scripts/Elements/project.html");
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data = await response.text();
+        return data;
+    } catch (error) {
+        console.error(
+            "There has been a problem with the fetch operation: ",
+            error
+        );
+    }
 }
 
 function parseProject(project, projectTemplate) {
