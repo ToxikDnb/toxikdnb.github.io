@@ -5,7 +5,14 @@
             "subtitle": "LU Coursework",
             "description": "Powerpoint remake designed for programmers",
             "image": "/Resources/Images/Placeholder.jpg",
-            "link": "blackaby.uk"
+            "link": "/Pages/project&title=LessPowerfulPoint"
+        },
+        {
+            "name": "CV Website",
+            "subtitle": "Personal Project",
+            "description": "This website, to provide an interactive version of my CV",
+            "image": "/Resources/Images/Placeholder.jpg",
+            "link": "/Pages/project&title=CVWebsite"
         }
     ]
 }
