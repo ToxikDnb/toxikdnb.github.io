@@ -3,11 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let title = document.getElementById("title");
     let pfp = document.getElementById("pfp");
     let navbarContainer = document.getElementById("navbarContainer");
-    fetch("/Scripts/Data/personalInfo.json"
-    )
+
+    console.log("fullname: " + fullname);
+    console.log("title: " + title);
+    console.log("pfp: " + pfp);
+    console.log("navbarContainer: " + navbarContainer);
+
+    fetch("/Scripts/Data/personalInfo.json")
         .then((response) => response.json())
         .then((personalInformation) => {
-            console.log("This is what");
             fullname.innerHTML = personalInformation.name;
             title.innerHTML = personalInformation.title;
             pfp.src =
