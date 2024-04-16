@@ -1,5 +1,5 @@
 // Fetch the content of the footer.html file
-fetch('/Scripts/Data/footer.html')
+fetch('/Scripts/Elements/footer.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
