@@ -414,7 +414,7 @@ img.Inset {
     }
 
     .TitleNav a {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     @media (max-width: 600px) {
