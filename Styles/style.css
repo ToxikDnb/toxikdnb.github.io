@@ -361,7 +361,8 @@ img.Inset {
     }
 
     .Title img {
-        width: 25vw;
+        width: 150px;
+        height: 150px;
         object-fit: cover;
     }
 
