@@ -28,9 +28,6 @@ function updatePersonalInformation() {
                     tempElement.appendChild(navElement);
                     navElement = tempElement;
                 }
-                document
-                    .getElementById("navbarContainer")
-                    .appendChild(navElement);
                 document.getElementById("menu").appendChild(navElement);
             });
         });

@@ -359,11 +359,22 @@ img.Inset {
 }
 
 .MenuButton {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(-45deg, var(--accentDark), var(--accent));
+    color: var(--dark);
+    border-radius: 50%;
+    font-size: 2vw;
+    z-index: 10000;
 }
 
 .Menu {
-    display: none;
+    display: grid;
     position: fixed;
     top: 0;
     left: 0;
@@ -375,7 +386,7 @@ img.Inset {
     grid-template-columns: 1fr;
     text-align: left;
     align-items: center;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -393,12 +404,12 @@ img.Inset {
     transition: transform 0.2s ease-in-out;
 }
 
-.MenuDecor{
+.MenuDecor {
     transition: transform 0.2s ease-in-out;
 }
 
 .Menu a {
-    font-size: 9vw;
+    font-size: 9vh;
     color: var(--dark);
     text-decoration: none;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -456,22 +467,13 @@ img.Inset {
         font-size: 8vw;
     }
 
-    .Menu {
-        display: grid;
+    .Menu{
+        transform: translateX(-100%);
     }
 
     .MenuButton {
-        display: block;
-        position: fixed;
-        top: 0;
         left: 0;
-        padding: 10px;
-        margin: 10px;
-        background: linear-gradient(-45deg, var(--accentDark), var(--accent));
-        color: var(--dark);
-        border-radius: 50%;
-        font-size: 2vw;
-        z-index: 10000;
+        right: auto;
     }
 
     .ProjectGrid {
