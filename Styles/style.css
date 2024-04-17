@@ -379,6 +379,24 @@ img.Inset {
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.MenuButtonLine {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: var(--dark);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.MenuDecor.show {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.MenuDecor{
+    transition: transform 0.2s ease-in-out;
+}
+
 .Menu a {
     font-size: 9vw;
     color: var(--dark);
@@ -438,7 +456,7 @@ img.Inset {
         font-size: 8vw;
     }
 
-    .Menu{
+    .Menu {
         display: grid;
     }
 
@@ -454,15 +472,6 @@ img.Inset {
         border-radius: 50%;
         font-size: 2vw;
         z-index: 10000;
-    }
-
-    .MenuButtonLine {
-        display: block;
-        width: 25px;
-        height: 5px;
-        background-color: var(--dark);
-        margin: 5px;
-        border-radius: 10px;
     }
 
     .ProjectGrid {
