@@ -389,7 +389,7 @@ img.Inset {
     z-index: 1000;
     padding-left: 20px;
     grid-template-columns: 1fr;
-    text-align: justify;
+    text-align: left;
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
