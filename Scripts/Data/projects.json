@@ -1,18 +1,18 @@
 {
     "projects": [
         {
+            "uid": "lpp",
             "name": "Less Powerful Point",
             "subtitle": "LU Coursework",
             "description": "Powerpoint remake designed for programmers",
-            "image": "/Resources/Images/Placeholder.jpg",
-            "link": "/Pages/project&title=LessPowerfulPoint"
+            "image": "/Resources/Images/Placeholder.jpg"
         },
         {
+            "uid": "cvw",
             "name": "CV Website",
             "subtitle": "Personal Project",
             "description": "This website, to provide an interactive version of my CV",
-            "image": "/Resources/Images/Placeholder.jpg",
-            "link": "/Pages/project&title=CVWebsite"
+            "image": "/Resources/Images/Placeholder.jpg"
         }
     ]
 }
