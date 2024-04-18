@@ -362,7 +362,6 @@ img.Inset {
     display: block;
     position: fixed;
     top: 0;
-    left: auto;
     right: 0;
     padding: 10px;
     margin: 10px;
@@ -478,11 +477,6 @@ img.Inset {
 
     .Menu a {
         font-size: 6vh;
-    }
-
-    .MenuButton {
-        left: 0;
-        right: auto;
     }
 
     .MenuButtonLine {
