@@ -279,26 +279,25 @@ a.ActivatedLink {
     border-radius: 5px;
 }
 
-.SubmitButton {
-    background-color: linear-gradient(-45deg, var(--accentDark), var(--accent));
+button {
+    background: linear-gradient(-45deg, var(--accentDark), var(--accent));
     color: var(--dark);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     border-top: 2px double var(--light);
     border-left: 2px double var(--light);
-    font-size: 1.5vw;
-    padding: 15px 30px;
     border-radius: 20px;
     cursor: pointer;
     margin-left: 10px;
     transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 15px 30px;
 }
 
-.SubmitButton:hover {
-    background-color: var(--accentDark);
+.SubmitButton {
+    font-size: 1.5vw;
 }
 
-.SubmitButton:active {
-    background-color: var(--text);
+button:active {
+    background: var(--text);
     transition: background-color 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border: 2px solid var(--light);
     border-top: 2px solid black;
@@ -373,6 +372,10 @@ img.Inset {
     z-index: 10000;
 }
 
+.MenuButton:hover {
+    background: var(--accentDark);
+}
+
 .MenuButton.show {
     background: var(--light);
 }
@@ -434,6 +437,17 @@ img.Inset {
     transform: translateX(0);
 }
 
+.ProjectInfoContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.ProjectImage {
+    margin: 0;
+    padding: 30px;
+}
+
 @media (max-width: 600px) {
     body {
         margin: 0;
@@ -469,6 +483,21 @@ img.Inset {
 
     .Title h1 {
         font-size: 8vw;
+    }
+
+    .ProjectInfoContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ProjectImage {
+        border: 2px solid var(--text);
+        border-top: 2px double var(--dark);
+        padding-left: 20px;
+        margin: 20px;
+        padding: 50px;
+        box-shadow: 4px 4px 5px -2px var(--dark);
     }
 
     .Menu {

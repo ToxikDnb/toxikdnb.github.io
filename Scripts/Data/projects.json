@@ -5,14 +5,18 @@
             "name": "Less Powerful Point",
             "subtitle": "LU Coursework",
             "description": "Powerpoint remake designed for programmers",
-            "image": "/Resources/Images/Placeholder.jpg"
+            "image": "/Resources/Images/Placeholder.jpg",
+            "link": "",
+            "fullDescription": ""
         },
         {
             "uid": "cvw",
             "name": "CV Website",
             "subtitle": "Personal Project",
             "description": "This website, to provide an interactive version of my CV",
-            "image": "/Resources/Images/Placeholder.jpg"
+            "image": "/Resources/Images/Placeholder.jpg",
+            "link": "",
+            "fullDescription": ""
         }
     ]
 }

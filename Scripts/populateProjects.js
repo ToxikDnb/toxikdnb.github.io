@@ -20,7 +20,7 @@ function parseProject(project, projectTemplate) {
 
     let projectElement = element.firstElementChild;
 
-    projectElement.getElementsByTagName("a")[0].href = "/Pages/project.html&uid=" + project.uid;
+    projectElement.getElementsByTagName("a")[0].href = "/Pages/project.html?uid=" + project.uid;
     projectElement.getElementsByTagName("h2")[0].textContent = project.name;
     projectElement.getElementsByTagName("h3")[0].textContent = project.subtitle;
     projectElement.getElementsByTagName("p")[0].textContent =
