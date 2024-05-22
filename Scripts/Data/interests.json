@@ -1,0 +1,48 @@
+{
+    "interests": [
+        {
+            "name": "Programming",
+            "description": "Since the rest of my CV is dedicated to programming I wont go into much detail here but, currently as a hobby, i am creating my own small game in Unity called \"A Town for Cattle\" which i plan to release on Nintendo Switch, Xbox, PlayStation and Steam. It will be a relatively small game, but focus on Zelda-like gameplay and a simple yet tightly written storyline with optional environmentally told side-stories for each of the characters."
+        },
+        {
+            "name": "Music",
+            "description": "I used to create Electronic music under the name of Toxik. I created it for around 8 years of my life and have been signed under multiple record deals. I used the software called Ableton to create the music, and my music was inspired by a mixture of dark pop, orchestral and traditional middle-eastern music, combining each of these disparate styles into the incredibly adaptable genres of DnB and Dubstep."
+        },
+        {
+            "name": "Gaming",
+            "description": "Gaming has been a part of my life ever since i could move my hands. With Metroid Fusion being the first game i ever played back on my GameBoy Advance SP, i have been enthralled by the storytelling possibilities that interactive medium brings. I mostly play indie games, since they often are the ones to push the boundaries of video ame storytelling, however i also enjoy some AAA games too. Amongst my favourite games of all time are Undertale, Hollow Knight, Metroid Dread, Portal and Hades."
+        },
+        {
+            "name": "Languages",
+            "description": "I enjoy learning languages and currently am in the process of learning Arabic, though it is hard to dedicate my entire time to it since i have so little with my degree. I have also learned German during my A levels, and have a working-level/almost fluent proficiency of it after continuing to improve it by reading short German stories."
+        },
+        {
+            "name": "Travelling",
+            "description": "I have travelled to many different places in my life, including Turkey, Switzerland, Italy, Catalonia, Spain, Fuerteventura, Majorca and the Vatican, as well as exploring much of England, Wales and Scotland. I enjoy experiencing different cultures and learning about the history of the places i visit, specifically in more local/rural areas rather than the often global-themed cities. Places i would love to visit some time in the future include Germany, Morocco, Tunisia, Egypt, Russia, Saudi Arabia, Denmark and Greece."
+        },
+        {
+            "name": "Sport",
+            "description": "During my teenage years, i took part in many sports, most notably Rugby, Karate and Swimming. I played rugby as a Prop Forward for my school team, as well as for Manchester Rugby Club - my greatest achievement playing against the Barcelona international team. As for Karate and swimming, both which i had been doing since i was around 12 and 8 respectively, i was working towards my 3rd Kyu when the karate venue closed down, and i had completed my swimming Honours and 1-mile swim, after which i had achieved what i wanted to and stopped due to school becoming more intensive at the time."
+        },
+        {
+            "name": "Films",
+            "description": "I enjoy watching many different kinds of films and TV show and discussing the aftermath and the meaning of them. I enjoy films and shows that are more thought-provoking and take on a deeper meaning than what they might first seem, such as Puss n Boots: The last wish, Godzilla Minus One and Megamind. I also enjoy films that are more light-hearted and fun, such as older Marvel movies, Jo-jo Rabbit and... Megamind again."
+        },
+        {
+            "name": "Cooking & Baking",
+            "description": "I am an avid cook and baker and i enjoy most incorporating flavours and ingredients from the Arab and Desi world into classic english dishes such as soups, stews and pies. I also enjoy baking and have made many different types of cakes, cookies and breads, with my favourites being simple rock cakes and victoria sponge."
+        },
+        {
+            "name": "Gardening",
+            "description": "I adore gardening and growing both flowers and crops during all seasons. I have grown many different types of flowers, including lilies, marigolds, tulips, sunflowers and poppies, as well as many different types of crops, including tomatoes, radishes, carrots, parsnips and strawberries. I also have a small herb garden where i grow chives, basil, rosemary and cress."
+        },
+        {
+            "name": "Eurorack Modules",
+            "description": "I own a small business building and selling custom Eurorack modules. Eurorack is a system where people can create their own music synthesisers by buying different modules and connecting them together. I have been building these modules for around a year now and have sold around 10 modules in that time, with 10 more being built over this summer with a projected revenue of around £1200 in total."
+        },
+        {
+            "name": "Pets",
+            "description": "I have looked after many pets in my life, including 9 guinea pigs at home and 6 snakes at school. I am currently the proud \"parent\" of a crested gecko named Cali, and she has been with me ever since i was 16. She is currently 4 years old and is a very happy, healthy and energetic lizard."
+        }
+    ]
+}
