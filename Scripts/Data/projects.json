@@ -7,16 +7,16 @@
             "description": "Powerpoint remake designed for programmers",
             "image": "/Resources/Images/Placeholder.jpg",
             "link": "",
-            "fullDescription": ""
+            "fullDescription": "This project was the main piece of coursework for our Year 2 project in Lancaster University. In it, we were tasked to create a Microsoft Powerpoint remake from scratch in java designed specifically for programmers. I took on a kind of leadership role for this project, helping to steward a team of 8, and was responsible for much of the design and implementation of the software. The project was coded in Java, utilising the Swing library, and implemented many programmer-specific features such as syntax highlighting, vis code integration and QR code generation as well as the majority of features you'd expect from any good presentation software. The project was a success, and we received a very high grade for it. Unfortunately, I am unable to provide a link to the project as it is not open source, but I am happy to discuss the project and demonstrate it in more detail if you would like to know more."
         },
         {
             "uid": "cvw",
             "name": "CV Website",
             "subtitle": "Personal Project",
             "description": "This website, to provide an interactive version of my CV",
-            "image": "/Resources/Images/Placeholder.jpg",
-            "link": "",
-            "fullDescription": ""
+            "image": "/Resources/Images/ProjectImages/Website.png",
+            "link": "https://github.com/ToxikDnb/toxikdnb.github.io",
+            "fullDescription": "This is my CV website, the very one you have been navigating for the past while! I aimed to create an interactive CV with this website that can both demonstrate my programming skills, provide a more engaging experience for you as well as allowing me to inject a bit more flavour and personality than a bog-standard CV. I know that efficiency is key when you have hundreds of potential employees to go through, and that is why i still offer a standard CV both as a download from this website and in applications, but also I believe that giving a more demonstrative example of myself before interviews can be a great aid to both you as an employer and me as someone looking for the highest chance of employment. This website was coded in HTML, CSS and JavaScript from scratch, no tools to make life easy or any wordpress or website builders here - this is a pure HTML, CSS and JavaScript website. I hope you enjoy it, and the button below brings you to a complete transparent look at the source code to see how i can build working solutions to problems from scratch!"
         }
     ]
 }
