@@ -465,21 +465,24 @@ img.Inset {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.ProjectImage {
-    margin: 0;
-    padding: 30px;
+.ProjectImageContainer {
+    margin: 1vw;
+    padding: 3vw;
+}
+
+.ProjectImage{
+    border-radius: 1vw;
 }
 
 .ProjectSourceButton {
     display: flex;
     justify-content: left;
-    width: 100%;
 }
 
 .ProjectSourceButtonContent {
-    padding: 4vw;
-    padding-left: 16vh;
-    padding-right: 16vh;
+    padding: 2vw;
+    padding-left: 12vh;
+    padding-right: 12vh;
     font-size: 2vw;
 }
 
@@ -526,13 +529,14 @@ img.Inset {
         gap: 20px;
     }
 
-    .ProjectImage {
-        margin: 10px;
-        padding: 50px;
+    .ProjectImageContainer {
+        margin: 1vw;
+        padding: 3vw;
     }
 
     .ProjectTitle {
         font-size: 12vw;
+        text-align: center;
     }
 
     .ProjectSubtitle {
@@ -549,13 +553,13 @@ img.Inset {
     .ProjectSourceButton {
         display: flex;
         justify-content: center;
-        width: 100%;
+        margin: 2vw;
     }
 
     .ProjectSourceButtonContent {
-        padding: 8vw;
-        padding-left: 8vh;
-        padding-right: 8vh;
+        padding: 4vw;
+        padding-left: 6vh;
+        padding-right: 6vh;
         font-size: 6vw;
     }
 
