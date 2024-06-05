@@ -532,15 +532,18 @@ img.Inset {
     }
 
     .ProjectTitle {
-        font-size: 10vw;
+        font-size: 12vw;
     }
 
     .ProjectSubtitle {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .ProjectParagraph {
         font-size: 3vw;
+        font-weight: bold;
+        margin: 1vw;
+        padding: 1vw;
     }
 
     .ProjectSourceButton {
@@ -553,6 +556,7 @@ img.Inset {
         padding: 8vw;
         padding-left: 8vh;
         padding-right: 8vh;
+        font-size: 6vw;
     }
 
     .Menu {
