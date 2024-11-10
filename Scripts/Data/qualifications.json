@@ -10,5 +10,10 @@
         { "German": 9 },
         { "Computer Science": 9 },
         { "Music": 9 }
+    ],
+    "GRE": [
+        { "Quantitative Reasoning": 160 },
+        { "Verbal Reasoning": 155 },
+        { "Analytical Writing": 4 }
     ]
 }
