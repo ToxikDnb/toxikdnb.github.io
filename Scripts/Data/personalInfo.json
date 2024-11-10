@@ -7,7 +7,7 @@
         { "name": "Projects", "link": "/Pages/projects.html" },
         { "name": "Education & Skills", "link": "/Pages/edu.html" },
         { "name": "Interests", "link": "/Pages/interests.html" },
-        { "name": "CV Download", "link": "/Resources/Files/MBCV.pdf" },
+        { "name": "CV", "link": "/Resources/Files/MBCV.pdf" },
         { "name": "Contact", "link": "/Pages/contact.html" }
     ]
 }
