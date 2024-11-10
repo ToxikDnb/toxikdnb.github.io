@@ -311,6 +311,19 @@ a.ActivatedLink {
     transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.ImageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.ImageGrid img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
 button {
     background: linear-gradient(-45deg, var(--accentDark), var(--accent));
     color: var(--dark);
