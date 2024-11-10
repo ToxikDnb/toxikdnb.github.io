@@ -1,20 +1,20 @@
 :root {
-    --bg: #000000;
-    --dark: #797979;
-    --mid: #383838;
-    --light: #141414;
-    --accent: #1a41c1;
-    --accentDark: #0c0570;
-    --text: #ececec;
-    --text-dark: #383838;
-    --text-hover: #89caff;
-    --text-footer: #aeaeae;
+    --bg: #a8a7a7;
+    --dark: #151515;
+    --mid: #bcbaba;
+    --light: #ebebeb;
+    --accent: #ebc014;
+    --accentDark: #c98914;
+    --text: #292929;
+    --text-dark: #ffffff;
+    --text-footer: #c9c9c9;
     --mainFont: "Arial", sans-serif;
     --accentFont: "Times New Roman", serif;
 }
 
 body {
-    background: linear-gradient(-45deg, var(--light), var(--mid));
+    background-color: var(--bg);
+    background-image: url("/Resources/Images/Background.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: var(--text);
@@ -401,7 +401,7 @@ img.Inset {
     display: block;
     width: 50px;
     height: 8px;
-    background-color: var(--text);
+    background-color: var(--dark);
     margin: 12px;
     border-radius: 20px;
 }
@@ -417,14 +417,14 @@ img.Inset {
 
 .Menu a {
     font-size: 9vh;
-    color: var(--text);
+    color: var(--dark);
     text-decoration: none;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     width: 100%;
 }
 
 .Menu a:hover {
-    color: var(--text-hover);
+    color: var(--text-dark);
     text-decoration: solid 2px underline;
 }
 
@@ -465,7 +465,7 @@ img.Inset {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.Centred {
+.Centred{
     text-align: center;
 }
 
@@ -474,7 +474,7 @@ img.Inset {
     padding: 3vw;
 }
 
-.ProjectImage {
+.ProjectImage{
     border-radius: 1vw;
 }
 
