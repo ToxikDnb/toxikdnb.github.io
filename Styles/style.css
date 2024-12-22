@@ -1,10 +1,11 @@
 :root {
     --bg: #000000;
-    --dark: #797979;
+    --light: #797979;
     --mid: #383838;
-    --light: #141414;
+    --dark: #141414;
     --accent: #1a41c1;
     --accentDark: #0c0570;
+    --accentDarker: #00003a;
     --text: #ececec;
     --text-dark: #383838;
     --text-hover: #89caff;
@@ -14,7 +15,7 @@
 }
 
 body {
-    background: linear-gradient(-45deg, var(--light), var(--mid));
+    background: linear-gradient(-45deg, var(--dark), var(--mid));
     background-size: cover;
     background-attachment: fixed;
     color: var(--text);
@@ -40,9 +41,9 @@ h2 {
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-weight: 700;
-    font-style: italic;
+    text-decoration: underline;
     color: var(--text);
     margin: 1vw;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -50,7 +51,7 @@ h3 {
 
 h4 {
     font-size: 1.2vw;
-    font-weight: 700;
+    font-weight: 200;
     color: var(--text);
     font-style: italic;
     margin: 1vw;
@@ -66,7 +67,7 @@ p {
 }
 
 footer {
-    background: linear-gradient(-45deg, black, var(--dark));
+    background: linear-gradient(-45deg, black, var(--light));
     padding: 20px;
     text-align: center;
     color: var(--text-footer);
@@ -99,13 +100,13 @@ table {
     width: 100%;
     text-align: left;
     border: 2px solid var(--text);
-    border-top: 1px solid var(--dark);
-    border-left: 1px solid var(--dark);
+    border-top: 1px solid var(--light);
+    border-left: 1px solid var(--light);
     font-family: var(--accentFont);
 }
 
 .Core {
-    background: linear-gradient(-45deg, var(--mid), var(--light));
+    background: linear-gradient(-45deg, var(--mid), var(--dark));
 }
 
 .Accent {
@@ -119,8 +120,8 @@ table {
 }
 
 .AccentPanel {
-    border-top: 2px double var(--light);
-    color: var(--dark);
+    border-top: 2px double var(--dark);
+    color: var(--light);
 }
 
 .ShadowBuffer {
@@ -199,6 +200,20 @@ a.ActivatedLink {
     text-decoration: solid 2px underline;
 }
 
+.TitleInGridBox {
+    background: linear-gradient(90deg, var(--accentDarker), var(--accentDark));
+    text-align: left;
+    vertical-align: top;
+    padding: 20px;
+    border: 1px solid var(--light);
+    border-top: 2px double var(--text);
+    border-left: 2px double var(--text);
+}
+
+.FlipTitle {
+    background: linear-gradient(90deg, var(--dark), var(--mid));
+}
+
 .Grid {
     display: grid;
     gap: 20px;
@@ -226,11 +241,12 @@ a.ActivatedLink {
 }
 
 .GridItem {
-    border: 1px solid var(--text);
-    border-top: 2px double var(--dark);
+    border: 1px solid var(--light);
+    border-top: 2px double var(--text);
+    border-left: 2px double var(--text);
     padding-left: 20px;
     margin: 20px;
-    padding: 50px;
+    padding: 20px;
 }
 
 .GridItemLeft {
@@ -243,7 +259,7 @@ a.ActivatedLink {
 .GridItemRight {
     margin-right: 0px;
     border-right: none;
-    border-left: 1px solid var(--dark);
+    border-left: 1px solid var(--light);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -301,7 +317,7 @@ a.ActivatedLink {
     padding: 10px;
     border: 1px solid var(--text);
     border-radius: 1px;
-    background: linear-gradient(-45deg, var(--accentDark), var(--light));
+    background: linear-gradient(-45deg, var(--accentDark), var(--dark));
     color: var(--text);
     text-align: center;
     font-size: 1.5vw;
@@ -326,10 +342,10 @@ a.ActivatedLink {
 
 button {
     background: linear-gradient(-45deg, var(--accentDark), var(--accent));
-    color: var(--dark);
+    color: var(--light);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    border-top: 2px double var(--light);
-    border-left: 2px double var(--light);
+    border-top: 2px double var(--dark);
+    border-left: 2px double var(--dark);
     border-radius: 20px;
     cursor: pointer;
     margin-left: 10px;
@@ -344,7 +360,7 @@ button {
 button:active {
     background: var(--text);
     transition: background-color 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 2px solid var(--light);
+    border: 2px solid var(--dark);
     border-top: 2px solid black;
     border-left: 2px solid black;
 }
@@ -356,10 +372,10 @@ button:active {
 }
 
 .Inset {
-    box-shadow: inset 2px 2px 5px -2px var(--dark);
-    border: 2px solid var(--dark);
-    border-right: 2px solid var(--light);
-    border-bottom: 2px solid var(--light);
+    box-shadow: inset 2px 2px 5px -2px var(--light);
+    border: 2px solid var(--light);
+    border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
 }
 
 img.Inset {
@@ -410,7 +426,7 @@ img.Inset {
     padding: 10px;
     margin: 10px;
     background: var(--accent);
-    color: var(--dark);
+    color: var(--light);
     transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 50%;
     font-size: 2vw;
@@ -422,7 +438,7 @@ img.Inset {
 }
 
 .MenuButton.show {
-    background: var(--light);
+    background: var(--dark);
 }
 
 .Menu {
@@ -649,19 +665,19 @@ img.Inset {
         padding: 0px;
     }
     .GridItem {
-        box-shadow: 2px 2px 5px -1px var(--dark);
+        box-shadow: 2px 2px 5px -1px var(--light);
         border-radius: 0;
-        border: 2px solid var(--light);
-        border-right: 2px solid var(--dark);
-        border-bottom: 2px solid var(--dark);
+        border: 2px solid var(--dark);
+        border-right: 2px solid var(--light);
+        border-bottom: 2px solid var(--light);
         overflow: hidden;
         margin: 10px;
     }
     .GridItemLeft {
-        box-shadow: inset 5px 5px 10px -2px var(--dark);
-        border: 2px solid var(--dark);
-        border-right: 2px solid var(--light);
-        border-bottom: 2px solid var(--light);
+        box-shadow: inset 5px 5px 10px -2px var(--light);
+        border: 2px solid var(--light);
+        border-right: 2px solid var(--dark);
+        border-bottom: 2px solid var(--dark);
     }
     .GridItem img {
         width: 50%;
