@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.2vw;
+    font-size: 3vw;
     font-weight: 700;
     text-decoration: underline;
     color: var(--text);
@@ -298,8 +298,7 @@ a.ActivatedLink {
 .SkillList {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .SkillList ul {
@@ -307,23 +306,25 @@ a.ActivatedLink {
     padding-left: 0;
 }
 
+
 .SkillList h4 {
-    text-align: center;
-    font-size: 2vw;
+    text-align: left;
+    font-size: 2.5vh;
     font-weight: 700;
 }
 
 .SkillList li {
-    padding: 10px;
-    border: 1px solid var(--text);
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 1px;
     background: linear-gradient(-45deg, var(--accentDark), var(--dark));
     color: var(--text);
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: 700;
+    text-align: left;
+    font-size: 2vh;
+    font-weight: 500;
     text-transform: uppercase;
-    cursor: pointer;
     transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
