@@ -60,10 +60,12 @@ h4 {
 
 p {
     line-height: 1.5;
-    margin: 1vw;
-    font-size: 1.2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 2vh;
     color: var(--text);
     text-align: justify;
+    padding: 3vh;
 }
 
 footer {
@@ -305,7 +307,6 @@ a.ActivatedLink {
     list-style-type: none;
     padding-left: 0;
 }
-
 
 .SkillList h4 {
     text-align: left;
@@ -574,7 +575,7 @@ img.Inset {
     }
 
     h4 {
-        font-size: 4vw;
+        font-size: 2vh;
     }
 
     p {
