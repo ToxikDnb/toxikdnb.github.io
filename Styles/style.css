@@ -682,4 +682,8 @@ img.Inset {
     .GridItem img {
         width: 50%;
     }
+
+    .DisappearOnMobile {
+        display: none;
+    }
 }
