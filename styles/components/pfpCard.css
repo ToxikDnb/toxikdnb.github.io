@@ -1,0 +1,71 @@
+.pfpCard {
+    width: 100%;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 24px;
+    font-family: var(--mainFont);
+    min-height: 260px;
+    gap: 40px;
+}
+
+.pfpCard img {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 25%;
+    border: 6px solid var(--themeColour);
+    flex-shrink: 0;
+}
+
+.pfpText {
+    text-align: left;
+    flex: 0 1 auto;
+    padding: 0;
+    max-width: 500px;
+}
+
+.pfpText h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--textColour);
+}
+
+.pfpText p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--textColourMid);
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .pfpText h2 {
+        font-size: 3rem;
+    }
+
+    .pfpText p {
+        font-size: 1.5rem;
+    }
+
+    .pfpCard img {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pfpText h2 {
+        font-size: 3.75rem;
+    }
+
+    .pfpText p {
+        font-size: 2rem;
+    }
+    .pfpCard img {
+        max-width: 450px;
+    }
+}

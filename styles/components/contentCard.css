@@ -1,0 +1,60 @@
+.contentCard {
+    width: 100%;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: var(
+        --backgroundColourMid
+    );
+    border-radius: var(
+        --panelBorderRadius
+    );
+    box-shadow: 0 12px 28px
+        rgba(0, 0, 0, 0.12);
+    font-family: var(--mainFont);
+}
+
+.contentCard h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contentBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: var(
+        --panelBorderRadius
+    );
+    transition: ease-in-out
+            background-color 0.3s,
+        color 0.3s, transform 0.3s;
+}
+
+.contentBox:hover {
+    background-color: var(--textColour);
+    color: var(--backgroundColour);
+    transform: scale(1.05);
+}
+
+.contentBox img {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.contentBox h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contentBox p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}

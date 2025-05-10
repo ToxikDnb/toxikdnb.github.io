@@ -1,0 +1,17 @@
+.fadeIn {
+    opacity: 0;
+    transform: translateY(15vh);
+    will-change: transform, opacity;
+}
+
+.fadeIn.animate {
+    animation: fadeInMove 1.5s
+        ease-in-out forwards;
+}
+
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

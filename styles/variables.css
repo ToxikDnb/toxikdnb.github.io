@@ -1,0 +1,26 @@
+:root {
+    --themeColour: #214887;
+    --themeColourMid: #28559e;
+    --mainFont: "Poppins", sans-serif;
+    --panelBorderRadius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundColour: #1a1a1a;
+        --backgroundColourMid: #1c1c1c;
+        --textColour: #ffffff;
+        --textColourMid: #cccccc;
+        --linkColor: #ffffff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --backgroundColour: #f5f5f5;
+        --backgroundColourMid: #f8f8f8;
+        --textColour: #000000;
+        --textColourMid: #555555;
+        --linkColor: #000000;
+    }
+}

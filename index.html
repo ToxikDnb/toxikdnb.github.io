@@ -11,7 +11,7 @@
         </title>
         <link
             rel="stylesheet"
-            href="/Styles/mainStyle.css"
+            href="/styles/main.css"
         />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
@@ -22,47 +22,34 @@
 <body>
     <!-- Heading -->
     <header>
-        <div class="container">
-            <h1 class="logo">
-                <a href="/index.html">
-                    MB
-                </a>
-            </h1>
-            <nav>
-                <ul class="nav-links">
-                    <li>
-                        <a
-                            href="/about.html"
-                            >About</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="/projects.html"
-                            >Projects</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="/contact.html"
-                            >Contact</a
-                        >
-                    </li>
-                </ul>
-            </nav>
+        <h1 class="logo">
+            <a href="/index.html">
+                MB
+            </a>
+        </h1>
+        <div class="nav-links">
+            <a href="/about.html"
+                >About</a
+            >
+            <a href="/education.html"
+                >Education</a
+            >
+            <a href="/projects.html"
+                >Projects</a
+            >
+            <a href="/contact.html"
+                >Contact</a
+            >
         </div>
     </header>
-    <div class="pfpCard">
+    <div class="pfpCard fadeIn">
         <img
             src="/Resources/Images/pfp.jpg"
             alt="Profile Picture"
-            class="pfpImg"
         />
         <div class="pfpText">
-            <h2 class="pfpName">
-                Mackenzie Blackaby
-            </h2>
-            <p class="pfpDesc">
+            <h2>Mackenzie Blackaby</h2>
+            <p>
                 Low Level Software
                 Engineer
                 <br />
@@ -71,12 +58,47 @@
             </p>
         </div>
     </div>
-    <space></space>
-    <div class="contentCard">
-        <h2 class="contentTitle">
-            Education
-        </h2>
-        <div class="contentBox">
+    <div class="threeCol fadeIn">
+        <div>
+            <h1>Column 1</h1>
+            <p>
+                Lorem ipsum dolor sit
+                amet, consectetur
+                adipiscing elit. Sed do
+                eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </div>
+        <div>
+            <h1>Column 2</h1>
+            <p>
+                Lorem ipsum dolor sit
+                amet, consectetur
+                adipiscing elit. Sed do
+                eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </div>
+        <div>
+            <h1>Column 3</h1>
+            <p>
+                Lorem ipsum dolor sit
+                amet, consectetur
+                adipiscing elit. Sed do
+                eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </div>
+    </div>
+    <div class="contentCard fadeIn">
+        <h2>Education</h2>
+        <a
+            href="https://www.lancaster.ac.uk/study/undergraduate/courses/computer-science-bsc-hons-g400/2026/"
+            class="contentBox"
+        >
             <img
                 src="/Resources/Images/lu-shield.svg"
                 alt="LU Logo"
@@ -93,6 +115,7 @@
                     class Hons
                 </p>
             </div>
-        </div>
+        </a>
     </div>
+    <script src="/scripts/fade.js"></script>
 </body>

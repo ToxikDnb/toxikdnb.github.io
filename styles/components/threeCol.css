@@ -1,0 +1,32 @@
+.threeCol {
+    display: flex;
+    justify-content: space-between; /* or space-around, or center */
+    gap: 20px;
+    padding: 5%;
+}
+
+.threeCol div {
+    transition: ease-in-out
+            background-color 0.3s,
+        color 0.3s, transform 0.3s;
+    flex: 1;
+    background-color: var(
+        --backgroundColourMid
+    );
+    padding: 20px;
+    border-radius: calc(
+        var(--panelBorderRadius) / 2
+    );
+    box-shadow: 0 4px 8px
+        rgba(0, 0, 0, 0.05);
+}
+
+.threeCol div:hover {
+    background-color: var(--textColour);
+    color: var(--backgroundColour);
+    transform: scale(1.05);
+}
+
+.threeCol div h1 {
+    font-size: 1.8rem;
+}
