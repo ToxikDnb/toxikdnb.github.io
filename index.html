@@ -21,13 +21,24 @@
 </html>
 <body>
     <!-- Heading -->
-    <header>
+    <header id="header">
         <h1 class="logo">
-            <a href="/index.html">
-                MB
-            </a>
+            <a href="/index.html">MB</a>
         </h1>
-        <div class="nav-links">
+
+        <!-- Burger icon -->
+        <button
+            class="menuToggle"
+            id="menuToggle"
+        >
+            &#9776;
+        </button>
+
+        <!-- Navigation links -->
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
             <a href="/services.html"
                 >Website Services</a
             >
@@ -158,4 +169,5 @@
     </div>
     <script src="/scripts/fade.js"></script>
     <script src="/scripts/resetScroll.js"></script>
+    <script src="/scripts/menuToggle.js"></script>
 </body>

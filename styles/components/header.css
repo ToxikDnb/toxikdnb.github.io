@@ -13,6 +13,10 @@ header {
     background: var(--backgroundColour);
 }
 
+header.headerExpanded {
+    border-bottom: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -27,14 +31,10 @@ header {
     padding: 0.5rem 2rem;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-}
-
 .nav-links {
     display: flex;
     text-align: right;
+    gap: 1rem;
 }
 
 .nav-links a {
@@ -46,4 +46,58 @@ header {
 header a:hover {
     color: var(--themeColourMid);
     transition: color 0.3s;
+}
+
+/* ===== Mobile Styling ===== */
+.menuToggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--textColour);
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.menuToggle.rotated {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+@media (max-width: 767px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        background-color: var(
+            --backgroundColour
+        );
+        overflow: hidden;
+        max-height: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.4s ease,
+            transform 0.4s ease;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        opacity: 1; /* Always fully visible */
+    }
+
+    .nav-links.show {
+        max-height: 300px; /* or auto with JS if you want */
+        transform: translateY(0);
+        border-bottom: 5px solid
+            var(--themeColour);
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
 }
