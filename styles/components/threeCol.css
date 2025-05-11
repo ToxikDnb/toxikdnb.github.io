@@ -1,11 +1,20 @@
 .threeCol {
-    display: flex;
-    justify-content: space-between; /* or space-around, or center */
-    gap: 20px;
     padding: 5%;
 }
 
-.threeCol div {
+.threeCol h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.threeColPanel {
+    display: flex;
+    justify-content: space-between; /* or space-around, or center */
+    gap: 20px;
+}
+
+.threeColPanel a {
     transition: ease-in-out
             background-color 0.3s,
         color 0.3s, transform 0.3s;
@@ -21,12 +30,12 @@
         rgba(0, 0, 0, 0.05);
 }
 
-.threeCol div:hover {
+.threeColPanel a:hover {
     background-color: var(--textColour);
     color: var(--backgroundColour);
     transform: scale(1.05);
 }
 
-.threeCol div h1 {
+.threeColPanel a h1 {
     font-size: 1.8rem;
 }
