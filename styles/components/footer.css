@@ -1,0 +1,19 @@
+footer {
+    background-color: var(
+        --backgroundColourMid
+    );
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    bottom: 0;
+    color: var(--textColourMid);
+    border-top: 5px solid
+        var(--themeColourMid);
+}
+
+footer p {
+    color: var(--textColour);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
