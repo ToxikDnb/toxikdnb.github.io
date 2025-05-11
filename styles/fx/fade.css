@@ -5,8 +5,15 @@
 }
 
 .fadeIn.animate {
-    animation: fadeInMove 1.5s
-        ease-in-out forwards;
+    animation-name: fadeInMove;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.fadeIn.delay.animate {
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeInMove {
