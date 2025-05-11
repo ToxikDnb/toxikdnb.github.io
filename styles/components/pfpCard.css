@@ -69,3 +69,21 @@
         max-width: 450px;
     }
 }
+
+@media (max-width: 767px) {
+    .pfpCard {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pfpText {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .pfpCard img {
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+}

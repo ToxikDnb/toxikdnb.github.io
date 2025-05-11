@@ -1,5 +1,5 @@
 .threeCol {
-    padding: 5%;
+    padding: 10%;
 }
 
 .threeCol h1 {
@@ -38,4 +38,19 @@
 
 .threeColPanel a h1 {
     font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+
+    .threeColPanel {
+        flex-direction: column;
+    }
+
+    .threeColPanel a {
+        width: 100%;
+    }
+
+    .threeColPanel a:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
