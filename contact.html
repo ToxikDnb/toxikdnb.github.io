@@ -17,104 +17,113 @@
         />
     </head>
     <body>
-        <!-- Header -->
-        <header id="header">
-            <h1 class="logo">
-                <a href="index">MB</a>
-            </h1>
-            <button
-                class="menuToggle"
-                id="menuToggle"
-            >
-                &#9776;
-            </button>
-            <div
-                class="nav-links"
-                id="navLinks"
-            >
-                <a href="services"
-                    >Website Services</a
+        <div class="mainPageContent">
+            <!-- Header -->
+            <header id="header">
+                <h1 class="logo">
+                    <a href="index"
+                        >MB</a
+                    >
+                </h1>
+                <button
+                    class="menuToggle"
+                    id="menuToggle"
                 >
-                <a href="projects"
-                    >Projects</a
-                >
-                <a href="contact"
-                    >Contact</a
-                >
-            </div>
-        </header>
-
-        <div class="contentCard fadeIn">
-            <h2>Contact Me</h2>
-            <p>
-                If you'd like to get in
-                touch, use the form
-                below. I will aim to get
-                back to you within 24
-                hours.
-            </p>
-
-            <form
-                action="https://formsubmit.co/c32e87ccedf60aa5884ccb8006ce2cbf"
-                method="POST"
-                class="contactForm"
-            >
-                <input
-                    type="hidden"
-                    name="_captcha"
-                    value="false"
-                />
-
-                <input
-                    type="hidden"
-                    name="_next"
-                    value="https://www.blackaby.uk/thankyou"
-                />
-
-                <label for="name"
-                    >Name:</label
-                >
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                />
-
-                <label for="email"
-                    >Email:</label
-                >
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                />
-
-                <label for="subject"
-                    >Subject:</label
-                >
-                <input
-                    type="text"
-                    id="subject"
-                    name="_subject"
-                    required
-                />
-
-                <label for="message"
-                    >Message:</label
-                >
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Send Message
+                    &#9776;
                 </button>
-            </form>
+                <div
+                    class="nav-links"
+                    id="navLinks"
+                >
+                    <a href="services"
+                        >Website
+                        Services</a
+                    >
+                    <a href="projects"
+                        >Projects</a
+                    >
+                    <a href="contact"
+                        >Contact</a
+                    >
+                </div>
+            </header>
+
+            <div
+                class="contentCard fadeIn"
+            >
+                <h2>Contact Me</h2>
+                <p>
+                    If you'd like to get
+                    in touch, use the
+                    form below. I will
+                    aim to get back to
+                    you within 24 hours.
+                </p>
+
+                <form
+                    action="https://formsubmit.co/c32e87ccedf60aa5884ccb8006ce2cbf"
+                    method="POST"
+                    class="contactForm"
+                >
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false"
+                    />
+
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://www.blackaby.uk/thankyou"
+                    />
+
+                    <label for="name"
+                        >Name:</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    />
+
+                    <label for="email"
+                        >Email:</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    />
+
+                    <label for="subject"
+                        >Subject:</label
+                    >
+                    <input
+                        type="text"
+                        id="subject"
+                        name="_subject"
+                        required
+                    />
+
+                    <label for="message"
+                        >Message:</label
+                    >
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
 
         <!-- Footer -->
