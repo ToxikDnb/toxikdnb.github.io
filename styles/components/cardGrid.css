@@ -1,0 +1,70 @@
+.cardGrid {
+    padding: 4% 8%;
+    text-align: center;
+}
+
+.cardGrid h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--textColorDark);
+}
+
+.cardGrid p {
+    font-size: 1rem;
+    color: var(--textColorMedium);
+    margin-bottom: 2rem;
+}
+
+.cardGrid .grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gridCard {
+    background-color: var(
+        --backgroundColourMid,
+        #f9f9f9
+    );
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px
+        rgba(0, 0, 0, 0.06);
+    text-align: left;
+    transition: transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.gridCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px
+        rgba(0, 0, 0, 0.1);
+}
+
+.gridCard h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--textColorDark);
+}
+
+.gridCard p {
+    font-size: 1rem;
+    color: var(--textColorMedium);
+}
+
+.gridCard a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--themeColour);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.gridCard a:hover {
+    color: #000;
+}

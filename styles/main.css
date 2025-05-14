@@ -6,5 +6,6 @@
 @import "./components/footer.css";
 @import "./components/pfpCard.css";
 @import "./components/contentCard.css";
+@import "./components/cardGrid.css";
 @import "./components/threeCol.css";
 @import "./fx/fade.css";
