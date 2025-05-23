@@ -10,11 +10,12 @@
 
 .threeColPanel {
     display: flex;
-    justify-content: space-between; /* or space-around, or center */
+    justify-content: space-between;
     gap: 20px;
 }
 
-.threeColPanel a {
+.threeColPanel a,
+.threeColPanel .column {
     transition: ease-in-out
             background-color 0.3s,
         color 0.3s, transform 0.3s;
@@ -30,27 +31,31 @@
         rgba(0, 0, 0, 0.05);
 }
 
-.threeColPanel a:hover {
+.threeColPanel a:hover,
+.threeColPanel .column:hover {
     background-color: var(--textColour);
     color: var(--backgroundColour);
     transform: scale(1.05);
 }
 
-.threeColPanel a h1 {
+.threeColPanel a h1,
+.threeColPanel .column h1 {
     font-size: 1.8rem;
 }
 
 @media (max-width: 767px) {
-
     .threeColPanel {
         flex-direction: column;
     }
 
-    .threeColPanel a {
+    .threeColPanel a,
+    .threeColPanel .column {
         width: 100%;
     }
 
-    .threeColPanel a:not(:last-child) {
+    .threeColPanel a:not(:last-child),
+    .threeColPanel
+        .column:not(:last-child) {
         margin-bottom: 20px;
     }
 }
