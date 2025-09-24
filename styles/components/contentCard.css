@@ -59,6 +59,10 @@
     transform: scale(1.05);
 }
 
+.contentBox div {
+    flex: 1;
+}
+
 .contentBox img {
     width: 80px;
     height: auto;
@@ -69,6 +73,13 @@
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
+}
+
+.contentBox h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    text-align: end;
 }
 
 .contentBox p {
